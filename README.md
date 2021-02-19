@@ -13,6 +13,9 @@ install the craigslist library
 ```
 pip install python-craigslist
 ```
+
+pick an email. currently it's hard-coded to use gmail because I thought one day I might use their 2fa and avoid hard-coding a password. anyway, once the burner email is set up, you will need to [allow less secure apps](https://support.google.com/accounts/answer/6010255?hl=en) to access it before you can have python send emails from it. once that is done, stick the burner email info in `config.yaml` and whatever email you want to receive the notifications at in `queries.yaml` (beware, the emails usually go to spam at first, something about bare html, craigslist links, and weirdly named email accounts must be suspicious, who knew??)
+
 ## running the script
 following setup, you can configure your query in `queries.yaml`. there are some examples there, if you want to know more about choosing a site, category, and filters you can look at the [python-craigslist documentation](https://pypi.org/project/python-craigslist/). then just run it:
 ```
