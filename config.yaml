@@ -1,0 +1,7 @@
+---
+query_filename: 'queries.yaml'
+storage_filename: 'notified_posts.yaml'
+smtp_port: 465
+sender_email: 'sender email here'
+sender_password: 'sender email password here'
+

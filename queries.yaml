@@ -1,0 +1,23 @@
+---
+email: 'recipient email here'
+queries:
+  - category: 'mca'
+    sites: 
+      - 'sfbay'
+    filters: 
+      make: 'BMW' 
+      model: 'R65'
+  - category: 'mca'
+    sites: 
+      - 'sfbay'
+    filters: 
+      make: 'BMW' 
+      model: 'K75'
+  - category: 'mca'
+    sites: 
+      - 'sfbay'
+      - 'losangeles'
+    filters: 
+      make: 'BMW' 
+      model: 'K75C'
+
