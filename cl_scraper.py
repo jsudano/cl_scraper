@@ -7,7 +7,7 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from copy import copy
 
-from html_templates import generate_posting_list
+from html_templates import generate_posting_list, email_base_format
 
 from craigslist import CraigslistForSale
 
@@ -64,7 +64,7 @@ if postings_to_notify:
 
     context = ssl.create_default_context()
 
-    with smtplib.SMTP_SSL("smtp.gmail.com", smtp_port, context=context) as server:
+    with smtplib.SMTP_SSL("smtp.gmail.com", config['smtp_port'], context=context) as server:
         server.login(sender_email, sender_password)
         server.sendmail(sender_email, receiver_email, message.as_string())
 

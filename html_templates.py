@@ -1,3 +1,5 @@
+from copy import copy
+
 email_base_format = """\
 <html>
   <body>
