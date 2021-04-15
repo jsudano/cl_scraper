@@ -25,7 +25,7 @@ it'll store any posts it finds in `notified_posts.yaml` and email you if it find
 
 to make it a cron job, do `crontab -e` and paste this after your cron timings:
 ```
-<absolute_path_to_cl_scraper_dir>/venv/bin/python <absolute_path_to_cl_scraper_dir>/cl_scraper.py
+cd <absolute_path_to_cl_scraper_dir> && venv/bin/python cl_scraper.py && cd -
 ```
 I would recommend calling this no more frequently than every 15 minutes, otherwise craigslist gets upset with you
 
